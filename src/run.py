@@ -2,6 +2,7 @@
 
 This module contains the main functions that run the game.
 """
+
 from state import GameState
 from config import GameConfig, BallColor
 from simulate import simulate_draw
@@ -11,6 +12,8 @@ from typing import Optional
 from typing_extensions import Annotated
 from output import print_results, make_chart
 from input import parse_inputs
+
+app = typer.Typer()
 
 
 def run_game(config, guess_value):
@@ -35,6 +38,7 @@ def run_game(config, guess_value):
     return game_state, player_guess
 
 
+@app.command()
 def main(
     initial_red: Annotated[
         Optional[int],

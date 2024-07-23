@@ -10,10 +10,9 @@ $ python play.py
 You can see documentation for the CLI using `python play.py --help`.
 """
 
-import typer
-from run import main
+from run import app
 from output import print_welcome_message
 
 if __name__ == "__main__":
     print_welcome_message()
-    typer.run(main)
+    app()
