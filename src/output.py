@@ -6,7 +6,7 @@ This file contains functionality that print game items to the console.
 from rich.table import Table, Column
 from rich import print
 from rich.console import Console
-from config import GameConfig, console
+from config import GameConfig
 from guess import PlayerGuess
 
 
