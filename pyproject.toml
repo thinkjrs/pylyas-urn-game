@@ -1,0 +1,8 @@
+[tool.poetry]
+name = "Pylya's Urn Game"
+version = "0.0.1"
+description = "A Python text-based game to celebrate Polya's Urn."
+authors = ["Jason R. Stevens, CFA <jason@thinkjrs.dev>"]
+
+[tool.pytest.ini_options]
+addopts = '-vv --cov=./ --cov-branch'
